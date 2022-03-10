@@ -15,4 +15,23 @@
 </body>
 
 </html>
-
+<p>
+    Variables in CSS are essential to any large-scale projects. If you have a set color scheme and are using the same
+    group
+    of colors over and over again in your site, instead of having to type it over and over again, you can create a
+    variable
+    to hold the color code. It also makes it much easier to change the color scheme of a site, since instead of editing
+    each
+    color value individually you can just change the value of the variable and everywhere it is used will reflect the
+    change. This is done using the <code>var()</code> function, a built-in function. Like variables in Javascript, they
+    can be local or
+    global. For it to be local you’ll use the <code>var()</code> function on the inside of any selector you want it to
+    be attached to
+    while to make it global, the selector you’ll use is the <code>:root</code>.
+    <code>:root</code> is a pseudo-selector that selects everything that the html selector would. The difference with
+    this is that <code>:root</code>
+    has a specificity of 10 compared to html’s specificity of 1.
+    The structure you must follow to create a variable is <code>var(--variableName, value)</code>. The name of the
+    variable has to start
+    with <code>--</code>. Once the variable is declared, you’re able to use it throughout your code.
+</p>

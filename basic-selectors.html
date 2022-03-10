@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Inner Page - Techie Bootstrap Template</title>
+    <title>Diving Into WebDev</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -42,13 +42,13 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top header-inner-pages">
         <div class="container d-flex align-items-center justify-content-between">
-            <h1 class="logo"><a href="index.html">Techie</a></h1>
+            <h1 class="logo"><a href="index.html">Diving Into WebDev</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
                     <li class="dropdown"><a href="#"><span>Foundation</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="the-internet.html">The Internet</a></li>
@@ -61,7 +61,7 @@
                     <li class="dropdown"><a href="#"><span>HTML</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="html-overview.html">Overview</a></li>
-                            <li><a href="header-body.html">Header/Body</a></li>
+                            <li><a href="header-body.html">Building an HTML Page</a></li>
                             <li><a href="common-tags.html">Common Tags</a></li>
                             <li><a href="css-in-html.html">Embedded CSS</a></li>
                             <li><a href="js-in-html.html">Embedded JavaScript</a></li>
@@ -72,7 +72,7 @@
                             <li><a href="css-overview.html">Overview</a></li>
                             <li><a href="basic-selectors.html">Selectors</a></li>
                             <li><a href="advanced-selectors.html">Advanced Selectors</a></li>
-                            <li><a href="marg-padding.html">Margins/Padding</a></li>
+                            <li><a href="marg-padding.html">Specificity</a></li>
                             <li><a href="variables.html">Variables</a></li>
                         </ul>
                     </li>
@@ -106,15 +106,107 @@
                         <li>Selectors</li>
                     </ol>
                 </div>
-
+                <!---->
             </div>
         </section><!-- End Breadcrumbs -->
 
         <section class="inner-page">
             <div class="container">
                 <p>
-                    This is a new page using the inner page template provided.
+                    A selector is the element on the HTML page you want to style. You can pick many selectors at
+                    the same time or you
+                    can
+                    just choose one. Adding classes and ids to your HTML elements can help you be more specific
+                    on what styles you want
+                    applied to each element. Some typical selectors are:
                 </p>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <code>element</code>
+                        <p>
+                            Element selectors are selected using just the name of the element. For example, to select an
+                            h1 element you would
+                            put
+                            “h1” as the selector, to select an image you would put “img”, and so on. This will select
+                            every occurrence of that
+                            element on the page, though, so if you have one h1 element you want styles different from
+                            another h1 element, it
+                            would
+                            be best to go up in specificity.
+                        </p>
+                    </div>
+                    <div class="col  align-self-center">
+                        <img src="img/element-selector.png" alt="A simple block of HTML.">
+                        <p class="fs-6 fst-italic">
+                            An element being selected.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <code>#id</code>
+                        <p>
+                            ID selectors allow you to style an element based on the id that has been assigned to it. You
+                            can pick an ID selector
+                            by
+                            using a hashtag (#).
+                        </p>
+                    </div>
+                    <div class="col  align-self-center">
+                        <img src="img/id-selector.png" alt="A simple block of HTML.">
+                        <p class="fs-6 fst-italic">
+                            An ID being selected.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <code>.class</code>
+                        <p>
+                            Class selectors pick the element or group of elements that have been assigned to that class.
+                            You can select a class by using a period (.).
+                        </p>
+                    </div>
+                    <div class="col  align-self-center">
+                        <img src="img/class-selector.png" alt="A simple block of HTML.">
+                        <p class="fs-6 fst-italic">
+                            A class being selected.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <code>element#some-id</code> or <code>element.some-class</code>
+                        <p>
+                            To select an element with a specific class or id, you would put the element followed by
+                            either a hashtag and ID or a
+                            period and class.
+                        </p>
+                    </div>
+                    <div class="col  align-self-center">
+                        <img src="img/element-class-id-selector.png" alt="A simple block of HTML.">
+                        <p class="fs-6 fst-italic">
+                            The child of an element being selected.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row align-items-start">
+                    <div class="col">
+                        <code>element, element, element</code>
+                        <p>You can select a group of elements by separating them with commas and a space.</p>
+                    </div>
+                    <div class="col  align-self-center">
+                        <img src="img/multi-selector.png" alt="A simple block of HTML.">
+                        <p class="fs-6 fst-italic">
+                            Multiple elements being selected at once.
+                        </p>
+
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -127,47 +219,12 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>Techie</h3>
-                        <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
-                        </p>
-                    </div>
-
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#index.html">Home</a></li>
                         </ul>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -186,13 +243,6 @@
                         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
                         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                     </div>
-                </div>
-                <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                 </div>
             </div>
 
