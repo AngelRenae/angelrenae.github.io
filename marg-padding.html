@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Diving Into WebDev</title>
+    <title>Specificity - Diving Into WebDev</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -52,7 +52,7 @@
                     <li class="dropdown"><a href="#"><span>Foundation</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="the-internet.html">The Internet</a></li>
-                            <li><a href="web-protocols.html">Web Protocols</a></li>
+                            <li><a href="web-protocols.html">TCP/IP</a></li>
                             <li><a href="webdev-over-the-years.html">Web Development Over the Years</a></li>
                             <li><a href="learning-webdev.html">Learning Web Development</a></li>
                             <li><a href="webdev-the-future.html">The Future of Web Development</a></li>
@@ -113,50 +113,56 @@
         </section><!-- End Breadcrumbs -->
 
         <section class="inner-page">
-            <div class="clearfix">
-                <div class="col-md-6 float-md-end mb-3 ms-md-3">
-                    <img src="img/specificity-calc.png" alt="A simple block of HTML.">
-                    <p class="fs-6 fst-italic">
-                        The results of Keegan Street's <a href="https://specificity.keegan.st/"
-                            target="_blank">Specificity
-                            Calculator</a>
+            <div class="container">
+                <div class="row align-items-start">
+                    <p class="col">
+                        When applying styles in CSS, it’s possible to overwrite the style of one item when trying to
+                        edit another. To
+                        understand
+                        what will change when writing CSS, it’s important to understand specificity. To find the
+                        specificity amount of a
+                        selector, you create a number by multiplying however many id’s there are by 100, the amount
+                        of classes, attributes,
+                        or
+                        pseudo-classes by 10, and the amount of elements or pseudo-elements by 1. For example, the
+                        selector
+                        <code>body#header.fixed-top</code> would have a specificity of 111 since it has one
+                        element (<code>body</code>), one class
+                        (<code>fixed-top</code>), and
+                        one id (<code>header</code>).
+                        How specificity comes into play is that whichever selector that has the highest specificity,
+                        that one will be the
+                        final
+                        one applied. So if you had a selector that changed the color of one element with a
+                        specificity of 1 and another
+                        selector
+                        that changed the color of the element with a specificity of 10, then the color that would be
+                        displayed on the page
+                        would
+                        be that of the selector with a specificity of 10.
+                        In the end, since CSS styles are applied in the order they are written in the document, if
+                        two selectors have the
+                        same
+                        specificity then whichever one is closest to the bottom of the document would be the one
+                        applied. Understanding and
+                        applying specificity properly is important since it can save you a lot of headaches down the
+                        line when
+                        troubleshooting
+                        your CSS.
                     </p>
+                    <div class="col se">
+                        <img src="img/specificity-calc.png" alt="img." class="img-fluid">
+                        <p class="fs-6 fst-italic">
+                            The results of Keegan Street's <a href="https://specificity.keegan.st/"
+                                target="_blank">Specificity
+                                Calculator</a>.
+                        </p>
+                    </div>
                 </div>
-                <p class="p-3">
-                    When applying styles in CSS, it’s possible to overwrite the style of one item when trying to
-                    edit another. To
-                    understand
-                    what will change when writing CSS, it’s important to understand specificity. To find the
-                    specificity amount of a
-                    selector, you create a number by multiplying however many id’s there are by 100, the amount
-                    of classes, attributes,
-                    or
-                    pseudo-classes by 10, and the amount of elements or pseudo-elements by 1. For example, the
-                    selector
-                    <code>body#header.fixed-top</code> would have a specificity of 111 since it has one
-                    element (<code>body</code>), one class
-                    (<code>fixed-top</code>), and
-                    one id (<code>header</code>).
-                    How specificity comes into play is that whichever selector that has the highest specificity,
-                    that one will be the
-                    final
-                    one applied. So if you had a selector that changed the color of one element with a
-                    specificity of 1 and another
-                    selector
-                    that changed the color of the element with a specificity of 10, then the color that would be
-                    displayed on the page
-                    would
-                    be that of the selector with a specificity of 10.
-                    In the end, since CSS styles are applied in the order they are written in the document, if
-                    two selectors have the
-                    same
-                    specificity then whichever one is closest to the bottom of the document would be the one
-                    applied. Understanding and
-                    applying specificity properly is important since it can save you a lot of headaches down the
-                    line when
-                    troubleshooting
-                    your CSS.
-                </p>
+                <div>
+
+                </div>
+            </div>
 
             </div>
 
